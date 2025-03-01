@@ -12,6 +12,7 @@ import hotDog from "@/app/assets/hotDog.png";
 import friedChicken from "@/app/assets/friedChicken.png";
 import milkShake from "@/app/assets/milkShake.png";
 import { Marck_Script } from "next/font/google";
+import { meals } from "./data";
 const Marck_Scriptfont = Marck_Script({
   subsets: ["latin"],
   weight: ["400"],
@@ -30,20 +31,6 @@ export default function Menu() {
     friedChicken,
     milkShake,
   ];
-  const [meals, setMeals] = useState<any>();
-
-  useEffect(() => {
-    fetch("/data.json")
-      .then((response) => {
-        return response.json();
-      })
-      .then((meals) => {
-        setMeals(meals);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
 
   return (
     <section className="bg-[#191816] px-5 py-5">
