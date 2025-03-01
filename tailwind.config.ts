@@ -11,6 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "custom-orange-1": "#f19447",
+        "custom-orange-2": "#f3a059",
+        "custom-orange-3": "#f5ab6a",
+        "custom-orange-4": "#f7b77d",
+        "custom-orange-5": "#f8c28f",
       },
     },
   },
